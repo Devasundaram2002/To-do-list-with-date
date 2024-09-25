@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a8585;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between container and footer */
+    min-height: 100vh; /* Make wrapper fill the entire viewport height */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for content */
+    padding: 20px;
+}
+
+.container {
+    background-color: #e4e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Add some spacing between inputs and button */
+}
+
+#task-input, #date-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#task-input {
+    width: 45%;
+}
+
+#date-input {
+    width: 35%;
+}
+
+#add-task-button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-task-button:hover {
+    background-color: #218838;
+}
+
+#task-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    color: #100f0f;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 0; /* Add some padding for spacing */
+}
